@@ -11,9 +11,9 @@ public class Alumno {
 	private String carrera;
 
 	public Alumno() {
-		
+
 	}
-	
+
 	public Alumno(int numeroCuenta, String nombre, String apellidos, String carrera) {
 		this.numeroCuenta = numeroCuenta;
 		this.nombre = nombre;
@@ -51,6 +51,12 @@ public class Alumno {
 
 	public void setCarrera(String carrera) {
 		this.carrera = carrera;
+	}
+
+	@Override
+	public String toString() {
+		return "Alumno [numeroCuenta=" + numeroCuenta + ", nombre=" + nombre + ", apellidos=" + apellidos + ", carrera="
+				+ carrera + "]";
 	}
 
 }
