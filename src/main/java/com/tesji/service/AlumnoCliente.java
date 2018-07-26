@@ -19,15 +19,15 @@ public class AlumnoCliente {
 	private static final String URL = "http://localhost:8080/HelloJersey";
 	private static final String TARGET = "rest/alumnos";
 	
-	private static final String REST_URI = "http://localhost:8080/HelloJersey/rest/alumnos";
+	private static final String REST_URI = "https://floating-headland-12547.herokuapp.com/webapi/alumnos";
 	
 	private static Client client = ClientBuilder.newClient();
 
 	public static void main(String args[]) {
 
-		//Alumno nuevoAlumno = new Alumno(1234, "NuevoSiete", "nuevoSiete", "Director de Inovacion CitiBanamex Mundial");
-		//Response respuesta = createAlumno(nuevoAlumno);
-		//LOG.info("Respuesta: " + respuesta);
+		Alumno nuevoAlumno = new Alumno(1234, "NuevoSiete", "nuevoSiete", "Director de Inovacion CitiBanamex Mundial");
+		Response respuesta = createAlumno(nuevoAlumno);
+		LOG.info("Respuesta: " + respuesta);
 		
 		//Alumno alumno = getAlumno(5);
 		//LOG.info("Alumno: " + alumno);
@@ -37,10 +37,9 @@ public class AlumnoCliente {
 		//LOG.info("Respuesta delete: " + respuestaDelete);
 		
 		
-		Alumno alumnoNuevo = new Alumno(10221680, "Eduardoooo", "Castilloooo", "Director Sistemas Citibanamex");
-		Response respuesta = updateAlumno(alumnoNuevo, 2);
-		
-		LOG.info("Respuesta: " + respuesta);
+		//Alumno alumnoNuevo = new Alumno(10221680, "Eduardoooo", "Castilloooo", "Director Sistemas Citibanamex");
+		//Response respuesta = updateAlumno(alumnoNuevo, 2);	
+		//LOG.info("Respuesta: " + respuesta);
 
 	}
 
